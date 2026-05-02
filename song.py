@@ -9,7 +9,7 @@ class Song:
         return song_sec
     
     def __str__(self):
-        return f"{self.name} by {self.artist} ({self.length})"
+        return f"'{self.name}' by {self.artist} ({self.length})"
     
 
 
