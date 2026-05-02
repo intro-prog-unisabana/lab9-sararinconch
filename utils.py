@@ -3,16 +3,16 @@ from person import Person
 
 def person_data():
     nombre = input("Enter the person's name:")
-    ncuenta = input("Enter a 4-digit account number:")
-    saldoini = input("Enter the initial balance:")
+    ncuenta = int(input("Enter a 4-digit account number:"))
+    saldoini = float(input("Enter the initial balance:"))
     persona = Person(nombre)
     cuenta = BankAccount(ncuenta, saldoini)
     persona.add_account(cuenta)
 
     cuentas = input("Are you done adding accounts? (yes/no):")
     while cuentas != "yes":
-        ncuenta = input("Enter a 4-digit account number:")
-        saldoini = input("Enter the initial balance:")
+        ncuenta = int(input("Enter a 4-digit account number:"))
+        saldoini = float(input("Enter the initial balance:"))
         cuenta = BankAccount(ncuenta, saldoini)
         persona.add_account(cuenta)
         cuentas = input("Are you done adding accounts? (yes/no):")
