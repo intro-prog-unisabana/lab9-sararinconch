@@ -9,11 +9,11 @@ while True:
     elif "A" in comando:
         comando_s = comando.split()
         pies = int(comando_s[1])
-        altitud = air.climb(pies)
+        air.climb(pies)
 
     elif "D" in comando:
         comando_s = comando.split()
         pies = int(comando_s[1])
-        altitud = air.descend(pies)
+        air.descend(pies)
 
-print(f"Final altitude: {altitud} feet")
+print(f"Final altitude: {air.altitude} feet")
